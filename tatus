@@ -1,0 +1,78 @@
+[33mcommit c402ec860e3b45ea214c8005c0859a71eae28738[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Thu Jun 16 00:20:37 2022 -0500
+
+    Cambiando los tipos de campo y añadiendo uno nuevo
+
+[33mcommit 80081517092ac44e2d4ee1df719f989778eb8c5a[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 98301c4 6ed308d
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Thu Jun 9 09:13:03 2022 -0500
+
+    .
+
+[33mcommit 98301c4a1aa9dcb0a4908fef9fca49795a370595[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Thu Jun 9 09:06:10 2022 -0500
+
+    .
+
+[33mcommit 6ed308dfa7f31c93d170f336eedcf2e1f135c860[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Thu Jun 9 09:02:31 2022 -0500
+
+    configurado
+
+[33mcommit 2f38154c1132f470868ae408b4468305fe81f9ce[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Thu Jun 9 09:00:00 2022 -0500
+
+    reañadiendo
+
+[33mcommit ba36fbd7eefd9eea3948de87ec8fa93459cf820f[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Wed Jun 8 09:41:25 2022 -0500
+
+    se crea el modelo cursos, se añade la app a settings y se actualiza los cambios con migrate
+
+[33mcommit 77f8343f276057987fab47e748a6e896b1b104f2[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Wed Jun 8 09:30:18 2022 -0500
+
+    se añade el modelo
+
+[33mcommit c4a602239ae884bcf9e26af45e032df665825b1f[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Wed Jun 8 09:24:41 2022 -0500
+
+    Se crea un usuario con permisos de administrador
+
+[33mcommit 9fc85fabe8dab26c0b234ed4f1df386235f60767[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Wed Jun 8 09:21:50 2022 -0500
+
+    Se actualizan los cambios hechos con makemigrations y migrate
+
+[33mcommit 277cf43ae2c413015a97d3faef877c94e57a0703[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Wed Jun 8 09:13:57 2022 -0500
+
+    Se crea al modelo de personas y se añade la app en settings.py
+
+[33mcommit a4d98817d4b4ea1d674ca22e8e2bbbeb5e2b3604[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Wed Jun 8 09:07:30 2022 -0500
+
+    Se crea la app Personas
+
+[33mcommit 4f23f49b1012e329c687be3a5fc4dd661da7d7a6[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Wed Jun 8 09:05:16 2022 -0500
+
+    Se ha modificado lel lenguaje y la zona horaria en el archivo settings.py
+
+[33mcommit 1bc42a4a93de3299d2a35a6bb4b780b9484cad4e[m
+Author: Alejandro G <dgarciat@unsa.edu.pe>
+Date:   Wed Jun 8 08:57:50 2022 -0500
+
+    Una vez inicializado el entorno e instalado django, se cre el proyecto lista Contactos
