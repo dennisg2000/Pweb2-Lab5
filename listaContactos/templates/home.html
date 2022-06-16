@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <h2>Hola mundodesde django</h2>
-     
+     <!--
         {{ myText }}, {{ myNumber }}
         <br>
         <ul>
@@ -9,21 +9,41 @@
             <li>{{ myItem }}</li>
             {% endfor %}
         </ul>
+    -->
     
-    
-    <!-- {{ myText|upper|truncatechars:"20" }}, {{ myNumber }}
+   {{ myText|upper|truncatechars:"20" }}, {{ myNumber }}
      <br>
      <ul>
          {% for myItem in myList %}
          <li>{{forloop.counter}} - {{ myItem }}
          {% if myItem == 33 %}
-         -Este es un nr magico
+         -Este es un nro magico
          {% elif myItem > 50 %}
          -Este es un nro mayor que 50
          {% endif %}
         </li>
          {% endfor %}
-     </ul>-->
+         <br>
+         {% for myItem in myList %}
+         <li>{{forloop.counter0}} - {{ myItem }}
+         {% if myItem == 44 %}
+         -Este es un nro par
+         {% elif myItem|divisibleby:2 %}
+         -Este es un nro impar
+         {% endif %}
+        </li>
+         {% endfor %}
+         <br>
+         {% for myItem in myList %}
+         <li>{{forloop.revcounter}} - {{ myItem }}
+         {% if myItem == 33 %}
+         -Este es un nro magico
+         {% elif myItem > 50 %}
+         -Este es un nro mayor que 50
+         {% endif %}
+        </li>
+         {% endfor %}
+     </ul>
     {{ request.user }}
     <br>
     {{ request.user.is_authenticated }}
