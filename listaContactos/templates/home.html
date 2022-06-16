@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Hola mundodesde django</h2>
+    <!-- {{ myText|upper|truncatechars:"20" }}, {{ myNumber }}
+     <br>
+     <ul>
+         {% for myItem in myList %}
+         <li>{{forloop.counter}} - {{ myItem }}
+         {% if myItem == 33 %}
+         -Este es un nr magico
+         {% elif myItem > 50 %}
+         -Este es un nro mayor que 50
+         {% endif %}
+        </li>
+         {% endfor %}
+     </ul>-->
+    {{ request.user }}
+    <br>
+    {{ request.user.is_authenticated }}
+{% endblock %}
