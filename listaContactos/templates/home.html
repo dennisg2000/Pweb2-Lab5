@@ -27,9 +27,9 @@
          {% for myItem in myList %}
          <li>{{forloop.counter0}} - {{ myItem }}
          {% if myItem == 44 %}
-         -Este es un nro par
+         -Este es un nro magico
          {% elif myItem|divisibleby:2 %}
-         -Este es un nro impar
+         -Este es un nro par
          {% endif %}
         </li>
          {% endfor %}
