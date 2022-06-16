@@ -1,6 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
     <h2>Hola mundodesde django</h2>
+     
+        {{ myText }}, {{ myNumber }}
+        <br>
+        <ul>
+            {% for myItem in myList %}
+            <li>{{ myItem }}</li>
+            {% endfor %}
+        </ul>
+    
+    
     <!-- {{ myText|upper|truncatechars:"20" }}, {{ myNumber }}
      <br>
      <ul>
