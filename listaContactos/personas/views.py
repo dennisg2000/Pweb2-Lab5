@@ -24,3 +24,13 @@ def personaCreateView(request):
 
 def searchForHelp(request):
     return render(request, 'personas/search.html', {})
+
+def personaCreateView2(request):
+    print('GET: ', request.GET)
+    print('POST: ', request.POST)
+    #print(request)
+    #if request.method == 'POST':
+    #    nombre= request.POST.get('q')
+    #    print(nombre)
+    context = {}
+    return render(request, 'personas/personasCreate2.html', context)
