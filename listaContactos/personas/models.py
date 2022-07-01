@@ -9,4 +9,4 @@ class Persona(models.Model):
 
     def get_absolute_url(self):
        # return "/persona/"+str(self.id)+"/"
-       return reverse('browsing',kwargs={'myID':self.id})
+       return reverse('personas:browsing',kwargs={'myID':self.id})
