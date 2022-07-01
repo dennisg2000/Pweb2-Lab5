@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from .models import Persona
-from .forms import PersonaForm
+from .forms import PersonaForm, RawPersonaForm
 
 # Create your views here.
 def personaTestView(request):
@@ -26,11 +26,19 @@ def searchForHelp(request):
     return render(request, 'personas/search.html', {})
 
 def personaCreateView2(request):
-    print('GET: ', request.GET)
-    print('POST: ', request.POST)
-    #print(request)
-    #if request.method == 'POST':
-    #    nombre= request.POST.get('q')
-    #    print(nombre)
+    #print('GET: ', request.GET)
+    #print('POST: ', request.POST)
+    print('hola')
+    print(request)
+    if request.method == 'POST':
+        nombre= request.POST.get('q')
+        print(nombre)
     context = {}
     return render(request, 'personas/personasCreate2.html', context)
+
+def personaAnotherCreateView(request):
+    form = RawPersonaForm()
+    context = {
+        'form' : form,
+    }
+    return render(request,'personas/personasCreate.html',context)
