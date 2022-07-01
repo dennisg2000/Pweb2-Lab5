@@ -19,18 +19,19 @@ from inicio.views import myHomeView, otraCosaVista
 from personas.views import (
     personaTestView, personaCreateView, 
     searchForHelp, personaCreateView2,personaAnotherCreateView,
-    personaShowOBject, personaDeleteView
+    personaShowOBject, personaDeleteView, personaListView
 )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',myHomeView, name='Pagina de inicio'),
     path('otrapagina',otraCosaVista, name='otracosa'),
-    path('persona/', personaTestView, name='Otro'),
+    #path('persona/', personaTestView, name='Otro'),
     path('agregar/', personaCreateView, name='createPersona'),
     path('search', searchForHelp, name='buscar'),
     path('add', personaCreateView2, name='createPersona'),
     path('anotherAdd',personaAnotherCreateView,name='OtroAgregarPersonas'),
     path('persona/<int:myID>/', personaShowOBject, name='browsing'),
     path('persona/<int:myID>/delete',personaDeleteView,name='borrar'),
+    path('persona/',personaListView,name='lista')
 ]
