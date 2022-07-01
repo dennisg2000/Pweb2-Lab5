@@ -18,7 +18,8 @@ from django.urls import path
 from inicio.views import myHomeView, otraCosaVista
 from personas.views import (
     personaTestView, personaCreateView, 
-    searchForHelp, personaCreateView2,personaAnotherCreateView
+    searchForHelp, personaCreateView2,personaAnotherCreateView,
+    personaShowOBject
 )
 
 urlpatterns = [
@@ -30,4 +31,5 @@ urlpatterns = [
     path('search', searchForHelp, name='buscar'),
     path('add', personaCreateView2, name='createPersona'),
     path('anotherAdd',personaAnotherCreateView,name='OtroAgregarPersonas'),
+    path('persona/<int:myID>/', personaShowOBject, name='browsing'),
 ]
