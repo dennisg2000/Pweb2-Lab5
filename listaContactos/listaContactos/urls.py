@@ -19,7 +19,7 @@ from inicio.views import myHomeView, otraCosaVista
 from personas.views import (
     personaTestView, personaCreateView, 
     searchForHelp, personaCreateView2,personaAnotherCreateView,
-    personaShowOBject
+    personaShowOBject, personaDeleteView
 )
 
 urlpatterns = [
@@ -32,4 +32,5 @@ urlpatterns = [
     path('add', personaCreateView2, name='createPersona'),
     path('anotherAdd',personaAnotherCreateView,name='OtroAgregarPersonas'),
     path('persona/<int:myID>/', personaShowOBject, name='browsing'),
+    path('persona/<int:myID>/delete',personaDeleteView,name='borrar'),
 ]
