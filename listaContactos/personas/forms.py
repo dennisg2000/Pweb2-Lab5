@@ -16,11 +16,11 @@ class PersonaForm(forms.ModelForm):
         if name.istitle():
             return name
         else: 
-            raise forms.ValidationError('la primara letra en mayuscula')
+            raise forms.ValidationError('la primera letra en mayuscula')
 
 class RawPersonaForm(forms.Form):
     nombres=forms.CharField(
-        widget = forms.Textarea(
+      widget = forms.Textarea(
             attrs={
                 'placeholder' : 'solo ingresa tu nombre',
                 'id' : 'nombreID',
@@ -28,7 +28,7 @@ class RawPersonaForm(forms.Form):
                 'cols' : '20',
                 'rows' : '5'
             }
-        )
+       )
     )
     apellidos=forms.CharField()
     edad=forms.IntegerField(initial=20)
